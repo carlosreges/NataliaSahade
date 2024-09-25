@@ -676,18 +676,20 @@
 										<form>
 											<div class="form-group">
 												<!-- <label for="name">Nombre</label> -->
-												<input type="text" class="form-control" id="name" placeholder="Tu nombre">
+												<input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre">
 											</div>
 											<div class="form-group">
 												<!-- <label for="phone">Teléfono</label> -->
-												<input type="tel" class="form-control" id="phone" placeholder="Teléfono">
+												<input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono">
 											</div>
 											<div class="text-body-sm">
-												<input type="text" class="form-control" id="mensaje" placeholder="Mensaje">
+												<input type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje">
 											</div>
-											<button type="button" class="btn btn-primary rounded-pill px-3">Enviar</button>
-										</form>
+											<button type="submit" id="button" class="btn btn-primary" name="button">Enviar</button>
 
+										</form>
+										<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+										<script type="text/javascript">emailjs.init('Ck3VIlKRQqZ_oi8_R')</script>
                 </div>
             </div>
 
@@ -767,7 +769,7 @@
     </div> <!-- end page-wrap -->
 
 		<!-- Botón Whatsapp -->
-		<a href="https://wa.me/5493513400891?text=Hola, he visto tu página web." class="float-wa" target="_blank">
+		<a href="https://wa.me/5492541636?text=Hola, he visto tu página web." class="float-wa" target="_blank">
 			<i class="fa fa-whatsapp" style="margin-top:16px;"></i>
 		</a>
 
@@ -775,6 +777,26 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+		<script> const btn = document.getElementById('button');
+
+			document.getElementById('form')
+					.addEventListener('submit', function (event) {
+							event.preventDefault();
+	
+							btn.value = 'Enviando...';
+	
+							const serviceID = 'service_bwsvacl';
+							const templateID = 'template_fznnyeq';
+	
+							emailjs.sendForm(serviceID, templateID, this)
+									.then(() => {
+											btn.value = 'Enviar Email';
+											alert('Email Enviado');
+									}, (err) => {
+											btn.value = 'Error al enviar el email';
+											alert(JSON.stringify(err));
+									});
+					});</script>
 
 </body>
 </html>
