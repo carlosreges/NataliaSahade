@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.nataliasahade.com.ar/sitemap.xml
+
+# Reglas específicas (opcional)
+Disallow: /private/
+Disallow: /tmp/

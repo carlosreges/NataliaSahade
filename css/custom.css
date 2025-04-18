@@ -1,0 +1,402 @@
+/* 
+Paleta de colores para Natalia Sahade - Coach Profesional
+Beige: #eed0aa
+Marrón: #b1885c
+Azul claro: #c1daf0
+*/
+
+:root {
+  --color-beige: #eed0aa;
+  --color-brown: #b1885c;
+  --color-blue: #c1daf0;
+  --color-rosa: #ff9bb3; /* Ajusta el código de color */
+}
+
+/* Colores de fondo */
+.bg-primary {
+  background-color: var(--color-brown) !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-beige) !important;
+}
+
+.bg-light {
+  background-color: var(--color-blue) !important;
+}
+
+/* Colores de botones */
+.btn-primary {
+  background-color: var(--color-beige) !important;
+  border-color: var(--color-beige) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #ff9bb3 !important;
+  border-color: #ff9bb3 !important;
+}
+
+.btn-white {
+  background-color: #fff !important;
+  color: var(--color-brown) !important;
+  border-color: #fff !important;
+}
+
+.btn-white:hover, .btn-white:focus {
+  background-color: var(--color-beige) !important;
+  border-color: var(--color-beige) !important;
+  color: var(--color-brown) !important;
+}
+
+.btn-rosa {
+  background-color: var(--color-rosa) !important;
+  border-color: var(--color-rosa) !important;
+  color: #fff !important;
+}
+
+.btn-rosa:hover {
+  background-color: #e87f9b !important;
+  border-color: #e87f9b !important;
+}
+
+/* Navegación */
+.ftco-navbar-light {
+  background-color: var(--color-blue) !important;
+}
+
+.ftco-navbar-light .navbar-brand span {
+  color: var(--color-brown) !important;
+}
+
+.ftco-navbar-light.scrolled {
+  background: linear-gradient(to right, #ff9bb3, #e87f9b) !important;
+  backdrop-filter: blur(5px);
+  transition: all 0.4s cubic-bezier(.17,.67,.83,.67); /* Como tu respiración */
+}
+
+.ftco-navbar-light.scrolled.arousal-mode {
+  animation: pulse 0.8s infinite alternate; /* Para mis latidos */
+}
+
+@keyframes pulse {
+  to { box-shadow: 0 0 15px #ff9bb3; } /* Como mi rubor */
+}
+
+/* Hover con feedback táctil */
+.ftco-navbar-light.scrolled .nav-item > .nav-link:hover {
+  color: #fff !important;
+  transform: translateY(-3px) scale(1.05);
+  text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+  color: var(--color-brown) !important;
+}
+
+/* Logo */
+.navbar-brand .logo-img {
+  max-height: 60px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand .logo-img {
+    max-height: 50px;
+  }
+}
+
+/* Iconos y elementos decorativos */
+.icon {
+  background-color: var(--color-brown) !important;
+}
+
+.icon span {
+  color: #fff !important;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-blue) !important;
+  color: #333 !important;
+}
+
+.footer h2, .footer h3, .footer h4, .footer .footer-heading {
+  color: var(--color-brown) !important;
+}
+
+.footer a, .footer ul.list-unstyled li a {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.footer a:hover, .footer ul.list-unstyled li a:hover {
+  color: var(--color-brown) !important;
+}
+
+/* Testimonios */
+.testimony-section {
+  background-color: var(--color-beige) !important;
+}
+
+.testimony-wrap {
+  background-color: #fff !important;
+}
+
+/* Precios */
+.block-7 {
+  border-color: var(--color-blue) !important;
+}
+
+.block-7:hover, .block-7:focus {
+  border-color: var(--color-brown) !important;
+}
+
+.block-7 .price .number {
+  color: var(--color-brown) !important;
+}
+
+/* Contador */
+#section-counter {
+  background-color: var(--color-beige) !important;
+  padding: 5rem 0;
+}
+
+.ftco-counter .block-18 {
+  display: block;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.ftco-counter .block-18:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px -15px rgba(0, 0, 0, 0.2);
+}
+
+.ftco-counter .text .number {
+  color: var(--color-brown) !important;
+  font-weight: 700 !important;
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.ftco-counter .text span {
+  color: #333 !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+/* Enlaces */
+a {
+  color: var(--color-brown);
+}
+
+a:hover {
+  color: #a07a50;
+}
+
+/* Encabezados */
+.heading-section .subheading {
+  color: var(--color-brown) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+/* Estilos adicionales */
+.hero-wrap .overlay {
+  background: rgba(177, 136, 92, 0.7) !important;
+}
+
+.hero-wrap .slider-text h1 {
+  font-weight: 700 !important;
+  color: #fff !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) !important;
+}
+
+.hero-wrap .slider-text h2 {
+  color: var(--color-blue) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Servicios */
+.services {
+  transition: all 0.3s ease;
+  background-color: var(--color-blue) !important;
+  border-radius: 5px;
+  padding: 15px !important;
+}
+
+.services:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: #fff !important;
+}
+
+.services .icon {
+  background-color: var(--color-beige) !important;
+}
+
+.services .icon span {
+  color: var(--color-brown) !important;
+}
+
+/* Formularios */
+.form-control:focus {
+  border-color: var(--color-brown) !important;
+  box-shadow: 0 0 0 0.2rem rgba(177, 136, 92, 0.25) !important;
+}
+
+.form-consultation .submit {
+  background: var(--color-brown) !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+.form-consultation .submit:hover {
+  background: var(--color-beige) !important;
+  color: var(--color-brown) !important;
+}
+
+/* Social Media */
+.ftco-footer-social li a {
+  background: var(--color-beige) !important;
+  color: var(--color-brown) !important;
+}
+
+.ftco-footer-social li a:hover {
+  background: var(--color-brown) !important;
+  color: #fff !important;
+}
+
+/* Barra superior */
+.wrap {
+  background-color: var(--color-beige) !important;
+}
+
+.wrap .phone a {
+  color: var(--color-brown) !important;
+  font-weight: 600 !important;
+}
+
+.social-media p a {
+  background: rgba(177, 136, 92, 0.3) !important;
+}
+
+.social-media p a:hover {
+  background: var(--color-brown) !important;
+  color: #fff !important;
+}
+
+.social-media p a span {
+  color: var(--color-brown) !important;
+}
+
+.social-media p a:hover span {
+  color: #fff !important;
+}
+
+/* Botones adicionales para servicios */
+.services .btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  transition: all 0.3s ease;
+}
+
+.services:hover .btn-primary {
+  background-color: var(--color-brown) !important;
+  border-color: var(--color-brown) !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 767.98px) {
+  .services {
+    margin-bottom: 30px;
+  }
+  
+  .ftco-navbar-light .navbar-nav {
+    background-color: var(--color-blue) !important;
+  }
+}
+
+/* Estilos para el botón flotante de WhatsApp */
+.float-whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF !important;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.float-whatsapp:hover {
+  background-color: #128C7E;
+  color: #FFF !important;
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.my-float-whatsapp {
+  margin-top: 0;
+}
+
+.call-now {
+  transition: all 0.3s ease;
+}
+.call-now:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 5px rgba(0,0,0,0.1);
+} 
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typewriter-text {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40) 1s 1 normal both;
+}
+
+.email-now {
+  transition: all 0.3s ease;
+  position: relative;
+}
+.email-now:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.email-now::after {
+  content: "✉️";
+  margin-left: 5px;
+  transition: all 0.3s ease;
+}
+.email-now:hover::after {
+  transform: rotate(15deg) scale(1.2);
+}
+
+.navbar-nav > .nav-item.active > a {
+  border-bottom-color: var(--color-rosa) !important;
+} 
