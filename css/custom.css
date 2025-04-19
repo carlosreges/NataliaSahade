@@ -72,12 +72,18 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 0 2px rgba(89, 49, 14, 0.3);
 }
 
-.ftco-navbar-light .navbar-nav > .nav-item.active > a {
-  color: var(--color-brown) !important;
+.ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
+  color: var(--color-rosa) !important;
+  border-bottom: 2px solid var(--color-rosa) !important;
+  font-weight: 700 !important;
 }
 
-.navbar-nav > .nav-item.active > a {
-  border-bottom-color: var(--color-rosa) !important;
+body .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
+  color: var(--color-rosa) !important;
+}
+
+.ftco-navbar-light.scrolled .navbar-nav > .nav-item.active > .nav-link {
+  color: var(--color-rosa) !important;
 }
 
 /* Logo */
@@ -462,4 +468,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .row.justify-content-center pb-5 {
   padding-bottom: 2rem !important; /* Reducir el padding inferior */
+}
+
+/* Forzar con selector de máxima especificidad */
+html body .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
+  color: var(--color-rosa) !important;
+}
+
+/* Regla para enfoque directo en el elemento */
+.nav-item.active > .nav-link {
+  color: var(--color-rosa) !important;
 } 

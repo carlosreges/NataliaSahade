@@ -753,6 +753,29 @@
   </script>
   -->
 
+  <script>
+  // Script para forzar el color rosa en los elementos de navegación activos
+  document.addEventListener('DOMContentLoaded', function() {
+    // Seleccionar todos los enlaces activos en la navegación
+    const activeNavLinks = document.querySelectorAll('.nav-item.active > .nav-link');
+    
+    // Aplicar el estilo directamente a cada uno
+    activeNavLinks.forEach(link => {
+      link.style.color = '#ff9bb3';
+      link.style.borderBottom = '2px solid #ff9bb3';
+    });
+    
+    // También aplicar cuando se hace scroll
+    window.addEventListener('scroll', function() {
+      const activeNavLinks = document.querySelectorAll('.nav-item.active > .nav-link');
+      activeNavLinks.forEach(link => {
+        link.style.color = '#ff9bb3';
+        link.style.borderBottom = '2px solid #ff9bb3';
+      });
+    });
+  });
+  </script>
+
     
   </body>
 </html>
