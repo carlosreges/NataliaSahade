@@ -8,24 +8,26 @@
     <meta name="keywords" content="coach, coaching, desarrollo personal, coaching ejecutivo, coach de vida, Buenos Aires, Argentina">
     <meta name="author" content="Natalia Sahade">
     
-    <!-- Favicon -->
+    <!-- Favicon - primero los iconos -->
     <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
     
+    <!-- Fuentes -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- 
-    <link rel="stylesheet" href="css/animate.css">
     
+    <!-- Estilos base -->
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/flaticon.css">
+    
+    <!-- Estilos personalizados (deben cargarse después de los estilos base) -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
   </head>
@@ -54,12 +56,6 @@
 	    	<a class="navbar-brand" href="index.html">
           <img src="images/LogoNS.png" alt="Natalia Sahade Logo" class="logo-img">
         </a>
-	    	<form action="#" class="searchform order-sm-start order-lg-last">
-          <div class="form-group d-flex">
-            <input type="text" class="form-control pl-3" placeholder="Buscar">
-            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
-          </div>
-        </form>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menú
 	      </button>
@@ -88,6 +84,41 @@
       </div>
     </section>
 
+    <!-- intro -->
+    <section class="intro py-5 bg-light">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-4">
+    				<div class="intro-box w-100 d-flex">
+    					<div class="icon d-flex align-items-center justify-content-center">
+    						<span class="fa fa-phone"></span>
+    					</div>
+    					<div class="text pl-3">
+    						<a href="tel:+5493512541636" target="_blank" rel="noopener noreferrer"><h4 class="mb-0">Llámame</h4></a>
+    						<span>Córdoba, Argentina</span>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="intro-box w-100 d-flex">
+    					<div class="icon d-flex align-items-center justify-content-center">
+    						<span class="fa fa-clock-o"></span>
+    					</div>
+    					<div class="text pl-3">
+    						<h4 class="mb-0">Horario de Atención</h4>
+    						<span>Lun - Vie 9:00 AM - 6:00 PM</span>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="intro-box w-100">
+    					<p class="mb-0"><a href="contact.html" class="btn btn-primary">Solicitar una Cita</a></p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>	
+    </section>
+
     <section class="ftco-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5 mb-3">
@@ -105,7 +136,7 @@
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Carrera y Negocio</h3>
                 <p>Asistencia en el desarrollo y crecimiento profesional, definición de metas laborales y estrategias de éxito empresarial.</p>
-                <a href="#" class="btn btn-sm btn-primary mt-2">Más información</a>
+                <a href="#" class="btn btn-sm btn-primary mt-2" style="color: #fff; font-weight: 500;">Más información</a>
               </div>
             </div>      
           </div>
@@ -200,7 +231,7 @@
     	</div>
     </section>
 		
-		<section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
+		<section class="ftco-section ftco-no-pb ftco-no-pt bg-light" style="display: none;">
       <div class="container">
       	<div class="row">
 	      	<div class="col-md-12">
@@ -210,10 +241,12 @@
 			            <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 18px;">Suscríbete a nuestros consejos semanales</h2>
 			          </div>
 			          <div class="col-md-5 d-flex align-items-center">
-			            <form action="#" class="subscribe-form">
+			            <form action="https://formspree.io/f/xwpldyqb" method="POST" class="subscribe-form">
+			              <input type="hidden" name="_subject" value="Nueva suscripción al boletín">
+			              <input type="hidden" name="_language" value="es">
 			              <div class="form-group d-flex">
-			                <input type="text" class="form-control" placeholder="Ingresa tu correo electrónico">
-			                <input type="submit" value="Suscribirme" class="submit px-3">
+			                <input type="email" name="email" class="form-control" placeholder="Ingresa tu correo electrónico" required>
+			                <button type="submit" class="submit px-3">Suscribirse</button>
 			              </div>
 			            </form>
 			          </div>
