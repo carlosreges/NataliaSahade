@@ -1,5 +1,7 @@
 # Natalia Sahade - Coaching Profesional
 
+![Preview del sitio](images/preview.jpg)
+
 Sitio web profesional para Natalia Sahade, coach certificada con más de 10 años de experiencia ayudando a personas y profesionales a alcanzar su máximo potencial.
 
 ## Características Principales
@@ -52,6 +54,6 @@ Este proyecto está bajo licencia MIT.
 ## Contacto
 
 Para más información sobre los servicios de coaching:
-- Email: nvsahade.coach@gmail.com
-- Teléfono: +54 9 351 2541636
+- Email: info@nataliasahade.com
+- Teléfono: +54 9 11 1234-5678
 - Sitio web: [www.nataliasahade.com.ar](https://www.nataliasahade.com.ar) 
