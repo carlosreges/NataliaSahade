@@ -65,7 +65,13 @@
 	    	<a class="navbar-brand" href="index.html">
           <img src="images/LogoNS.png" alt="Natalia Sahade Logo" class="logo-img">
         </a>
-	    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	    	<form action="#" class="searchform order-sm-start order-lg-last">
+          <div class="form-group d-flex">
+            <input type="text" class="form-control pl-3" placeholder="Buscar">
+            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+          </div>
+        </form>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menú
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
@@ -80,16 +86,15 @@
 	      </div>
 	    </div>
 	  </nav>
-    <!-- END nav -->
-    <div class="hero-wrap" style="background-image: url('images/introlarge.png');">
+    <!-- section hero -->
+    <div class="hero-wrap" style="background-image: url('images/introlarge.png'); background-position: center center; background-size: cover;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters align-items-center" style="min-height: 80vh;">
                 <div class="col-lg-6">
-                    <!--<div class="text w-100 text-white">
-                        <h2 class="mb-3">Tu Coach Personal de Vida</h2>
+                    <div class="text w-100 text-white">
                         <h1 class="mb-4">Descubre tu Potencial Interior</h1>
-                    </div>-->
+                    </div>
                 </div>
                 
                 <div class="col-lg-6">
@@ -126,7 +131,6 @@
         </div>
     </div>
 		
-    <!-- intro -->
 		<section class="intro py-5 bg-light">
 			<div class="container">
 				<div class="row">
@@ -161,7 +165,6 @@
 			</div>	
 		</section>
 
-    <!-- Sección de servicios -->
     <section class="ftco-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5 mb-3">
@@ -201,7 +204,7 @@
             		<span class="flaticon-crm"></span>
               </div>
               <div class="media-body p-2">
-                <h3 class="heading">Relaciones con otros</h3>
+                <h3 class="heading">Relaciones</h3>
                 <p>Mejora tus habilidades de comunicación y desarrolla relaciones saludables en todos los ámbitos.</p>
                 <a href="services.html" class="btn btn-sm btn-primary mt-2">Más información</a>
               </div>
@@ -213,7 +216,7 @@
             		<span class="flaticon-marriage"></span>
               </div>
               <div class="media-body p-2">
-                <h3 class="heading">Planificación Personal</h3>
+                <h3 class="heading">Coaching de Vida</h3>
                 <p>Encuentra tu propósito, establece objetivos claros y desarrolla un plan para una vida plena.</p>
                 <a href="services.html" class="btn btn-sm btn-primary mt-2">Más información</a>
               </div>
@@ -223,7 +226,6 @@
     	</div>
     </section>
    	
-    <!-- Sección de servicios -->
     <section class="ftco-section bg-light">
     	<div class="container">
     		<div class="row justify-content-center pb-5 mb-3">
@@ -274,14 +276,13 @@
     	</div>
     </section>
 
-    <!-- Sección de contador -->
     <section class="ftco-counter" id="section-counter">
     	<div class="container">
 				<div class="row">
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 text-center">
               <div class="text">
-                <strong class="number" data-number="5">0</strong>
+                <strong class="number" data-number="10">0</strong>
               </div>
               <div class="text">
               	<span>Años de Experiencia</span>
@@ -291,7 +292,7 @@
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 text-center">
               <div class="text">
-                <strong class="number" data-number="10">0</strong>
+                <strong class="number" data-number="250">0</strong>
               </div>
               <div class="text">
               	<span>Clientes Satisfechos</span>
@@ -301,7 +302,7 @@
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 text-center">
               <div class="text">
-                <strong class="number" data-number="15">0</strong>
+                <strong class="number" data-number="25">0</strong>
               </div>
               <div class="text">
               	<span>Empresas Asesoradas</span>
@@ -311,7 +312,7 @@
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 text-center">
               <div class="text">
-                <strong class="number" data-number="4">0</strong>
+                <strong class="number" data-number="15">0</strong>
               </div>
               <div class="text">
               	<span>Programas de Coaching</span>
@@ -322,7 +323,7 @@
     	</div>
     </section>
 
-    <!-- Sección de testimonios -->
+
 
     <section class="ftco-section testimony-section bg-secondary">
       <div class="container">
@@ -416,8 +417,63 @@
       </div>
     </section>
 
-    <!-- barra de suscripcion -->
-    <section class="ftco-section ftco-no-pb ftco-no-pt bg-light" style="display: none;">
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2>Últimas noticias de nuestro blog</h2>
+            <span class="subheading">Noticias &amp; Blog</span>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_1.jpg');">
+              </a>
+              <div class="text mt-3">
+              	<div class="meta mb-2">
+                  <div><a href="#">30 de Enero, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Incluso el todopoderoso Pointing no tiene control sobre los textos ciegos</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text mt-3">
+              	<div class="meta mb-2">
+                  <div><a href="#">30 de Enero, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Incluso el todopoderoso Pointing no tiene control sobre los textos ciegos</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('images/image_3.jpg');">
+              </a>
+              <div class="text mt-3">
+              	<div class="meta mb-2">
+                  <div><a href="#">30 de Enero, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Incluso el todopoderoso Pointing no tiene control sobre los textos ciegos</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+	<!-- barra de suscripcion -->
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
       <div class="container">
       	<div class="row">
 	      	<div class="col-md-12">
@@ -443,7 +499,6 @@
       </div>
     </section>
 
-    <!-- Sección de paquetes -->
     <section class="ftco-section bg-light">
     	<div class="container">
     		<div class="row justify-content-center pb-5 mb-3">
@@ -750,29 +805,6 @@
     });
   </script>
   -->
-
-  <script>
-  // Script para forzar el color rosa en los elementos de navegación activos
-  document.addEventListener('DOMContentLoaded', function() {
-    // Seleccionar todos los enlaces activos en la navegación
-    const activeNavLinks = document.querySelectorAll('.nav-item.active > .nav-link');
-    
-    // Aplicar el estilo directamente a cada uno
-    activeNavLinks.forEach(link => {
-      link.style.color = '#ff9bb3';
-      link.style.borderBottom = '2px solid #ff9bb3';
-    });
-    
-    // También aplicar cuando se hace scroll
-    window.addEventListener('scroll', function() {
-      const activeNavLinks = document.querySelectorAll('.nav-item.active > .nav-link');
-      activeNavLinks.forEach(link => {
-        link.style.color = '#ff9bb3';
-        link.style.borderBottom = '2px solid #ff9bb3';
-      });
-    });
-  });
-  </script>
 
     
   </body>

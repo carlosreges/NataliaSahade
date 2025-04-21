@@ -1,42 +1,15 @@
 /* 
-===== Natalia Sahade - Coach Profesional =====
-Estructura del CSS:
-1. Variables y colores base
-2. Elementos generales (textos, enlaces, encabezados)
-3. Navegación
-4. Secciones específicas (hero, servicios, etc.)
-5. Componentes (botones, formularios, etc.)
-6. Efectos y animaciones
-7. Media queries
+Paleta de colores para Natalia Sahade - Coach Profesional
+Beige: #eed0aa
+Marrón: #b1885c
+Azul claro: #c1daf0
 */
 
-/* ===== 1. VARIABLES Y COLORES BASE ===== */
 :root {
   --color-beige: #eed0aa;
   --color-brown: #b1885c;
   --color-blue: #c1daf0;
-  --color-rosa: #ff9bb3;
-  --color-rosa-pastel: #ffc2d1;
-  --color-chocolate: #59310e;
-}
-
-/* ===== 2. ELEMENTOS GENERALES ===== */
-/* Enlaces */
-a {
-  color: var(--color-brown);
-}
-
-a:hover {
-  color: #a07a50;
-}
-
-/* Encabezados */
-.heading-section .subheading {
-  color: var(--color-brown) !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
+  --color-rosa: #ff9bb3; /* Ajusta el código de color */
 }
 
 /* Colores de fondo */
@@ -52,8 +25,41 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-blue) !important;
 }
 
-/* ===== 3. NAVEGACIÓN ===== */
-/* Navbar principal */
+/* Colores de botones */
+.btn-primary {
+  background-color: var(--color-beige) !important;
+  border-color: var(--color-beige) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #ff9bb3 !important;
+  border-color: #ff9bb3 !important;
+}
+
+.btn-white {
+  background-color: #fff !important;
+  color: var(--color-brown) !important;
+  border-color: #fff !important;
+}
+
+.btn-white:hover, .btn-white:focus {
+  background-color: var(--color-beige) !important;
+  border-color: var(--color-beige) !important;
+  color: var(--color-brown) !important;
+}
+
+.btn-rosa {
+  background-color: var(--color-rosa) !important;
+  border-color: var(--color-rosa) !important;
+  color: #fff !important;
+}
+
+.btn-rosa:hover {
+  background-color: #e87f9b !important;
+  border-color: #e87f9b !important;
+}
+
+/* Navegación */
 .ftco-navbar-light {
   background-color: var(--color-blue) !important;
 }
@@ -62,29 +68,13 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-brown) !important;
 }
 
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  transition: all 0.3s ease;
-}
-
 .ftco-navbar-light.scrolled .navbar-nav > .nav-item > .nav-link:hover {
-  color: var(--color-chocolate) !important;
+  color: #ff9bb3; 
   text-shadow: 0 0 2px rgba(89, 49, 14, 0.3);
 }
 
-.ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
-  color: #333 !important;
-  border-bottom: 2px solid #333 !important;
-  font-weight: 700 !important;
-}
-
-body .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
-  color: #333 !important;
-}
-
-.ftco-navbar-light.scrolled .navbar-nav > .nav-item.active > .nav-link {
-  color: #333 !important;
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+  color: var(--color-brown) !important;
 }
 
 /* Logo */
@@ -94,117 +84,37 @@ body .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
   transition: all 0.3s ease;
 }
 
-/* Barra superior */
-.wrap {
-  background-color: var(--color-beige) !important;
+@media (max-width: 767.98px) {
+  .navbar-brand .logo-img {
+    max-height: 50px;
+  }
 }
 
-.wrap .phone a {
-  color: var(--color-brown) !important;
-  font-weight: 600 !important;
+/* Iconos y elementos decorativos */
+.icon {
+  background-color: var(--color-brown) !important;
 }
 
-/* Social Media */
-.social-media p a {
-  background: rgba(177, 136, 92, 0.3) !important;
-}
-
-.social-media p a:hover {
-  background: var(--color-brown) !important;
+.icon span {
   color: #fff !important;
 }
 
-.social-media p a span {
-  color: var(--color-brown) !important;
-}
-
-.social-media p a:hover span {
-  color: #fff !important;
-}
-
-/* ===== 4. SECCIONES ESPECÍFICAS ===== */
-/* Hero */
-.hero-wrap {
-    height: 95vh; /* Aumentado de 80vh a 95vh */
-    width: 100%;
-    background-size: cover;
-    background-position: left center; /* Cambiado a left center para mostrar mejor el lado izquierdo */
-    background-repeat: no-repeat;
-    position: relative;
-    max-height: 1080px; /* Aumentado para coincidir con la altura de la imagen */
-}
-
-.hero-wrap .container {
-    height: 100%;
-    position: relative;
-    z-index: 2;
-    max-width: 1920px; /* Ajustado al nuevo ancho de imagen */
-}
-
-.hero-wrap .row {
-    height: 95vh; /* Ajustado para coincidir con el contenedor padre */
-    max-height: 1080px;
-}
-
-.hero-wrap .overlay {
-    background: rgba(177, 136, 92, 0.4) !important; /* Reducida un poco la opacidad */
-}
-
-.hero-wrap .slider-text h1 {
-  font-weight: 700 !important;
-  color: #fff !important;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) !important;
-}
-
-.hero-wrap .slider-text h2 {
-  color: var(--color-blue) !important;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
-}
-
-/* Ajuste del formulario en el hero */
-.consultation-form {
-    background-color: rgba(255, 255, 255, 0.95) !important;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Servicios */
-.services {
-  transition: all 0.3s ease;
+/* Footer */
+.footer {
   background-color: var(--color-blue) !important;
-  border-radius: 5px;
-  padding: 15px !important;
+  color: #333 !important;
 }
 
-.services:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  background-color: #fff !important;
-}
-
-.services .icon {
-  background-color: var(--color-beige) !important;
-}
-
-.services .icon span {
+.footer h2, .footer h3, .footer h4, .footer .footer-heading {
   color: var(--color-brown) !important;
 }
 
-/* Ajustar tamaño de fuente en sección servicios */
-.services h3.heading {
-  font-size: 1.7rem !important; /* Reducido de 1.8rem a 1.7rem */
-  font-weight: 600;
-  margin-bottom: 0.8rem;
+.footer a, .footer ul.list-unstyled li a {
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
-.services p {
-  font-size: 1rem !important; /* Reducido de 1.1rem a 1rem */
-  line-height: 1.6;
-}
-
-.services .btn-sm {
-  font-size: 0.95rem !important; /* Reducido de 1rem a 0.95rem */
-  padding: 0.5rem 1rem !important;
+.footer a:hover, .footer ul.list-unstyled li a:hover {
+  color: var(--color-brown) !important;
 }
 
 /* Testimonios */
@@ -214,6 +124,19 @@ body .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
 
 .testimony-wrap {
   background-color: #fff !important;
+}
+
+/* Precios */
+.block-7 {
+  border-color: var(--color-blue) !important;
+}
+
+.block-7:hover, .block-7:focus {
+  border-color: var(--color-brown) !important;
+}
+
+.block-7 .price .number {
+  color: var(--color-brown) !important;
 }
 
 /* Contador */
@@ -252,115 +175,73 @@ body .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
   font-size: 0.9rem;
 }
 
-/* Precios */
-.block-7 {
-  border-color: var(--color-blue) !important;
+/* Enlaces */
+a {
+  color: var(--color-brown);
 }
 
-.block-7:hover, .block-7:focus {
-  border-color: var(--color-brown) !important;
+a:hover {
+  color: #a07a50;
 }
 
-.block-7 .price .number {
+/* Encabezados */
+.heading-section .subheading {
   color: var(--color-brown) !important;
 }
 
-/* Footer con altura reducida */
-.footer {
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+/* Estilos adicionales */
+.hero-wrap {
+  background-position: center center; /* centra la imagen vertical y horizontalmente */
+  height: 100vh; /* altura completa de la ventana */
+  display: flex;
+  align-items: center; /* centra el contenido verticalmente */
+}
+
+.hero-wrap .overlay {
+  background: rgba(177, 136, 92, 0.7) !important;
+}
+
+.hero-wrap .slider-text h1 {
+  font-weight: 700 !important;
+  color: #fff !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) !important;
+}
+
+.hero-wrap .slider-text h2 {
+  color: var(--color-blue) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+.hero-wrap .text {
+  margin-left: auto; /* empuja el texto hacia la derecha */
+  padding-right: 2rem; /* espacio a la derecha */
+  max-width: 500px; /* controla el ancho del bloque de texto */
+}
+
+/* Servicios */
+.services {
+  transition: all 0.3s ease;
   background-color: var(--color-blue) !important;
-  color: #333 !important;
-  padding: 1.5rem 0 1rem 0 !important;
+  border-radius: 5px;
+  padding: 15px !important;
 }
 
-.footer .py-5 {
-  padding-top: 1rem !important;
-  padding-bottom: 0.5rem !important;
-}
-
-.footer h2, .footer h3, .footer h4, .footer .footer-heading {
-  color: var(--color-brown) !important;
-  font-size: 1.2rem !important;
-  margin-bottom: 0.5rem !important;
-}
-
-.footer a, .footer ul.list-unstyled li a {
-  color: rgba(0, 0, 0, 0.7) !important;
-  padding: 0.3rem 0 !important;
-  font-size: 0.9rem;
-}
-
-.footer a:hover, .footer ul.list-unstyled li a:hover {
-  color: var(--color-brown) !important;
-}
-
-.footer .ftco-footer-social {
-  margin-top: 1rem;
-}
-
-.footer .row {
-  margin-bottom: 0.5rem !important;
-}
-
-/* Eliminar espacio después del footer */
-.footer .copyright {
-  margin-bottom: 0 !important; /* Eliminado el margen inferior */
-}
-
-.footer .row.mt-md-5 {
-  margin-top: 0.5rem !important; /* Reducido de 1rem */
-}
-
-/* Ajustar espacio entre elementos */
-.footer .py-5 p:last-child {
-  margin-bottom: 0 !important;
-}
-
-/* ===== 5. COMPONENTES ===== */
-/* Botones */
-.btn-primary {
-  background-color: var(--color-rosa-pastel) !important;
-  border-color: var(--color-rosa-pastel) !important;
-  color: #333 !important;
-  font-weight: 500;
-  text-shadow: none;
-}
-
-.btn-primary:hover {
-  color: #333 !important;
-  background-color: #ffb5c7 !important;
-  border-color: #ffb5c7 !important;
-}
-
-.btn-white {
+.services:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   background-color: #fff !important;
-  color: var(--color-brown) !important;
-  border-color: #fff !important;
 }
 
-.btn-white:hover, .btn-white:focus {
+.services .icon {
   background-color: var(--color-beige) !important;
-  border-color: var(--color-beige) !important;
+}
+
+.services .icon span {
   color: var(--color-brown) !important;
-}
-
-.btn-rosa {
-  background-color: var(--color-rosa) !important;
-  border-color: var(--color-rosa) !important;
-  color: #fff !important;
-}
-
-.btn-rosa:hover {
-  background-color: #e87f9b !important;
-  border-color: #e87f9b !important;
-}
-
-/* Iconos */
-.icon {
-  background-color: var(--color-brown) !important;
-}
-
-.icon span {
-  color: #fff !important;
 }
 
 /* Formularios */
@@ -380,7 +261,73 @@ body .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
   color: var(--color-brown) !important;
 }
 
-/* Botón flotante de WhatsApp */
+/* Social Media */
+.ftco-footer-social li a {
+  background: var(--color-beige) !important;
+  color: var(--color-brown) !important;
+}
+
+.ftco-footer-social li a:hover {
+  background: var(--color-brown) !important;
+  color: #fff !important;
+}
+
+/* Barra superior */
+.wrap {
+  background-color: var(--color-beige) !important;
+}
+
+.wrap .phone a {
+  color: var(--color-brown) !important;
+  font-weight: 600 !important;
+}
+
+.social-media p a {
+  background: rgba(177, 136, 92, 0.3) !important;
+}
+
+.social-media p a:hover {
+  background: var(--color-brown) !important;
+  color: #fff !important;
+}
+
+.social-media p a span {
+  color: var(--color-brown) !important;
+}
+
+.social-media p a:hover span {
+  color: #fff !important;
+}
+
+/* Botones adicionales para servicios */
+.services .btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  transition: all 0.3s ease;
+}
+
+.services:hover .btn-primary {
+  background-color: var(--color-brown) !important;
+  border-color: var(--color-brown) !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 767.98px) {
+  .services {
+    margin-bottom: 30px;
+  }
+  
+  .ftco-navbar-light .navbar-nav {
+    background-color: var(--color-blue) !important;
+  }
+}
+
+/* Estilos para el botón flotante de WhatsApp */
 .float-whatsapp {
   position: fixed;
   width: 60px;
@@ -411,38 +358,14 @@ body .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
   margin-top: 0;
 }
 
-/* ===== 6. EFECTOS Y ANIMACIONES ===== */
-/* Efectos para enlaces de contacto */
 .call-now {
   transition: all 0.3s ease;
 }
-
 .call-now:hover {
   transform: scale(1.05);
   text-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
+} 
 
-.email-now {
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.email-now:hover {
-  transform: scale(1.05);
-  text-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-.email-now::after {
-  content: "✉️";
-  margin-left: 5px;
-  transition: all 0.3s ease;
-}
-
-.email-now:hover::after {
-  transform: rotate(15deg) scale(1.2);
-}
-
-/* Animación de escritura */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -454,87 +377,57 @@ body .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
   animation: typing 3s steps(40) 1s 1 normal both;
 }
 
-/* ===== 7. MEDIA QUERIES ===== */
-@media (max-width: 767.98px) {
-  .services {
-    margin-bottom: 30px;
-  }
-  
-  .ftco-navbar-light .navbar-nav {
-    background-color: var(--color-blue) !important;
-  }
-  
-  .navbar-brand .logo-img {
-    max-height: 50px;
-  }
-  
-  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 20px;
-  }
+.email-now {
+  transition: all 0.3s ease;
+  position: relative;
+}
+.email-now:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.email-now::after {
+  content: "✉️";
+  margin-left: 5px;
+  transition: all 0.3s ease;
+}
+.email-now:hover::after {
+  transform: rotate(15deg) scale(1.2);
 }
 
-/* Aumentar tamaño del título principal en sección servicios */
-.row .heading-section h2 {
-  font-size: 2.5rem !important;
+.ftco-navbar-light.scrolled .navbar-nav > .nav-item > .nav-link:hover {
+  color: #59310e; /* Chocolate oscuro premium */
+  text-shadow: 0 0 2px rgba(89, 49, 14, 0.3);
+}
+
+.navbar-nav > .nav-item.active > a {
+  border-bottom-color: var(--color-rosa) !important;
+}
+
+/* Para mejorar el hero de todas las páginas */
+.hero-wrap-2 {
+  background-position: center center !important;
+  background-size: cover !important;
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-wrap-2 .slider-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+
+.hero-wrap-2 .slider-text .bread {
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
-.row .heading-section .subheading {
-  font-size: 1.3rem !important;
-  letter-spacing: 2px;
-}
-
-/* Reducir espacio antes de la sección de servicios */
-.ftco-section {
-  padding: 4em 0 !important; /* Reducido del valor predeterminado */
-}
-
-/* Ajustar específicamente el primer ftco-section después del intro */
-.intro + .ftco-section {
-  padding-top: 2em !important; /* Espacio reducido aún más en la parte superior */
-}
-
-/* Ajustar espaciado entre secciones */
-.row.justify-content-center {
-  margin-bottom: 2rem !important; /* Reducir el espacio después del título */
-}
-
-.row.justify-content-center pb-5 {
-  padding-bottom: 2rem !important; /* Reducir el padding inferior */
-}
-
-/* Forzar con selector de máxima especificidad */
-html body .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
-  color: #333 !important;
-}
-
-/* Regla para enfoque directo en el elemento */
-.nav-item.active > .nav-link {
-  color: #333 !important;
-}
-
-/* Ajustar altura de la sección intro */
-.intro.py-5 {
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
-}
-
-/* Ajustar elementos internos de intro para que se vean proporcionados */
-.intro-box .icon {
-  width: 50px;
-  height: 50px;
-  min-width: 50px;
-}
-
-.intro-box h4 {
-  font-size: 1.1rem;
-}
-
-.intro-box span {
-  font-size: 0.9rem;
-}
-
-.intro-box .btn {
-  padding: 0.5rem 1rem;
-}
+.hero-wrap-2 .overlay {
+  opacity: 0.7;
+} 

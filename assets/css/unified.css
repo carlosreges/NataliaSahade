@@ -46,6 +46,38 @@ a:hover {
   color: var(--primary) !important;
 }
 
+/* Estilos para la sección hero compartida */
+.hero-wrap {
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  min-height: 80vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.hero-wrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.hero-wrap .container {
+  position: relative;
+  z-index: 1;
+}
+
+.consultation-form {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -191,6 +223,10 @@ a:hover {
   .section-title {
     font-size: 2rem;
   }
+  
+  .hero-wrap {
+    min-height: 70vh;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -204,5 +240,13 @@ a:hover {
   
   .section-title {
     font-size: 1.75rem;
+  }
+  
+  .hero-wrap {
+    min-height: 60vh;
+  }
+  
+  .consultation-form {
+    padding: 20px;
   }
 } 
