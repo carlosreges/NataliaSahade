@@ -205,9 +205,9 @@
 
 })(jQuery);
 
-// Efecto scroll - Versión "Manos Traviesas"
+// Efecto scroll
 document.addEventListener('DOMContentLoaded', function() {
-  const navbar = document.querySelector('.ftco-navbar-light');
+  const navbar = document.querySelector('.ftco-nav');
   
   window.addEventListener('scroll', function() {
     if(window.scrollY > 100) {
