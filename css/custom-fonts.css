@@ -1,0 +1,206 @@
+/* Fuente personalizada para el nombre Natalia Sahade */
+@font-face {
+    font-family: 'NataliaFont';
+    /* Usando específicamente la fuente tan-mon-cheri */
+    src: url('../fonts/tan-mon-cheri.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Mejora el rendimiento de carga de fuentes */
+}
+
+/* Aplicar la fuente al nombre de Natalia Sahade en el menú */
+.navbar-brand h1 {
+    font-family: 'NataliaFont', sans-serif;
+    /* Ajusta los siguientes valores según tus preferencias */
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: var(--primary); /* Usar el color primario de la paleta */
+    transition: all 0.3s ease; /* Suavizar cambios de estado */
+}
+
+/* Asegurar que el fondo del nombre use el color correcto */
+.navbar-brand.bg-primary {
+    background-color: #b1885c !important; /* Forzar el color primario personalizado */
+}
+
+/* También aplicamos la fuente al nombre en el encabezado principal si lo deseas */
+#home h1.display-3 {
+    font-family: 'NataliaFont', sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+}
+
+/* Estilo para el "Soy" en el hero */
+#home h3.text-primary {
+    color: var(--primary) !important;
+    font-family: 'NataliaFont', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* Aplicar la fuente a los títulos principales de todas las secciones */
+.container h1.display-5,
+.container-fluid h1.display-5 {
+    font-family: 'NataliaFont', sans-serif;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+/* Aplicar la fuente a los subtítulos de las secciones */
+.container h3:not(.fw-bold):not(.lh-base),
+.container-fluid h3:not(.fw-bold):not(.lh-base) {
+    font-family: 'NataliaFont', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Aplicar la fuente a los títulos de servicios y proyectos */
+.service-item h4,
+.portfolio-flters li {
+    font-family: 'NataliaFont', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* Reposicionando el botón Back to Top */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 120px; /* Ajustar para que quede por encima del botón de WhatsApp */
+    z-index: 99;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.back-to-top:hover {
+    background-color: var(--accent) !important;
+    border-color: var(--accent) !important;
+}
+
+/* Estilos para el botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366; /* Color estándar de WhatsApp */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #1da851; /* Versión más oscura del verde WhatsApp */
+    color: #FFF;
+    transform: scale(1.1);
+}
+
+.whatsapp-float i {
+    margin-top: 0;
+}
+
+/* Estilos para los enlaces de contacto ocultos */
+.contact-info-hidden {
+    display: none;
+}
+
+.contact-link {
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+/* Estilos personalizados para los botones de contacto */
+.btn-contact {
+    padding: 12px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-contact-phone {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.btn-contact-phone:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.btn-contact-email {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--dark);
+}
+
+.btn-contact-email:hover {
+    background-color: #96b6d1; /* Versión más oscura del secundario */
+    border-color: #96b6d1;
+    color: var(--dark);
+}
+
+.btn-contact-whatsapp {
+    background-color: #25d366; /* Color estándar de WhatsApp */
+    border-color: #25d366;
+    color: white;
+}
+
+.btn-contact-whatsapp:hover {
+    background-color: #1da851; /* Versión más oscura del verde WhatsApp */
+    border-color: #1da851;
+    color: white;
+}
+
+/* Estilos para el botón del formulario */
+.form-submit-btn {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+    transition: all 0.3s ease;
+    padding: 12px 30px;
+    font-weight: 500;
+}
+
+.form-submit-btn:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons .btn-square {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.social-icons .btn-square:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--dark);
+} 
