@@ -189,6 +189,20 @@
 	  console.log('show');
 	});
 
+	// Inicialización del carrusel de testimonios
+	$('.carousel-testimony').owlCarousel({
+	    autoplay: true,
+	    autoplayTimeout: 5000,
+	    loop: true,
+	    items: 1,
+	    margin: 30,
+	    stagePadding: 0,
+	    nav: false,
+	    dots: true,
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn'
+	});
+
 })(jQuery);
 
 // Efecto scroll - Versión "Manos Traviesas"

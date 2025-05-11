@@ -4,6 +4,55 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+/* Custom Font */
+@font-face {
+    font-family: 'Tan Mon Cheri';
+    src: url('../fonts/tan-mon-cheri.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Estilos para títulos */
+h1, .h1 {
+    font-family: 'Tan Mon Cheri', serif;
+    font-weight: normal;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: var(--color-brown);
+    margin-bottom: 1.5rem;
+}
+
+h2, .h2 {
+    font-family: 'Tan Mon Cheri', serif;
+    font-weight: normal;
+    font-size: 2.8rem;
+    line-height: 1.4;
+    color: var(--color-brown);
+    margin-bottom: 1rem;
+}
+
+/* Estilos específicos para hero */
+.hero-wrap h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    h1, .h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2, .h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-wrap h1 {
+        font-size: 3rem;
+    }
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -693,6 +742,16 @@ pre {
 
 .offset-11 {
   margin-left: 91.66667%; }
+
+@font-face {
+    font-family: 'Tan Mon Cheri';
+    src: url('path/to/tan-mon-cheri.ttf') format('truetype'); /* Asegúrate de que la ruta sea correcta */
+}
+
+/* Estilo para los títulos de las secciones */
+h2, h3, h4 { /* Ajusta según los niveles de título que quieras cambiar */
+    font-family: 'Tan Mon Cheri', sans-serif; /* Aplica la fuente */
+}
 
 @media (min-width: 576px) {
   .col-sm {

@@ -185,6 +185,38 @@
     }
 }
 
+/* Navbar */
+.navbar.bg-white {
+    background-color: var(--light) !important;
+}
+
+.navbar.navbar-light {
+    background-color: var(--light) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--primary); /* Color marrón para los links */
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--accent); /* Color accent para hover y activo */
+}
+
+/* Para asegurar que el navbar fixed también tenga el mismo color */
+.navbar.fixed-top {
+    background-color: var(--light) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste del logo/brand para que contraste bien con el fondo claro */
+.navbar-brand.bg-primary {
+    background: var(--primary) !important;
+}
+
+.navbar-brand.bg-primary h1 {
+    color: var(--light) !important;
+}
 
 /*** Header ***/
 #home {
@@ -363,6 +395,7 @@
     justify-content: center;
     background: url(../images/bg-icon.png) center center no-repeat;
     background-size: cover;
+    margin-right: 2rem; /* Aumenta el espacio entre icono y texto */
 }
 
 .service-item h6 span {
@@ -723,4 +756,28 @@ html.at-top .back-to-top {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
     background: none !important;
+}
+
+/* Separación de iconos sociales */
+.social-icons {
+    gap: 1rem; /* Agrega espacio uniforme entre iconos */
+}
+
+.social-icons .btn-square {
+    margin-right: 1.5rem !important; /* Aumenta el margen derecho entre iconos */
+}
+
+/* Separación de iconos de contacto */
+.btn-contact {
+    margin-bottom: 1rem; /* Agrega espacio entre botones de contacto */
+}
+
+/* Separación de iconos en servicios */
+.service-item .bg-icon {
+    margin-right: 2rem; /* Aumenta el espacio entre icono y texto */
+}
+
+/* Separación en aportes */
+.d-flex.align-items-start .btn-square {
+    margin-right: 1.5rem; /* Aumenta espacio entre checkbox y texto */
 }
